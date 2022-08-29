@@ -1,0 +1,20 @@
+var loader = {
+  initialize : function () {
+    var html = '<div class="loading-overlay"></div>' +
+    '<div class="loading-overlay-image-container">' +
+      '<img src="../root/images/loading-image-v2.gif" class="loading-overlay-img" />' +
+    '</div>'; 
+          
+      $( 'body' ).append( html );
+  },
+
+      showLoader : function () {
+        $( '.loading-overlay').show();
+        $( '.loading-overlay-image-container' ).show();
+      },
+
+      hideLoader : function () {
+        $( '.loading-overlay' ).hide();
+        $( '.loading-overlay-image-container' ).hide();
+      }
+    }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Andrew's DBD </title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../root/css/style.css">
+
+<link rel="stylesheet" href="../root/css/global.css">
+
+<script type="text/javascript" src="../root/javascript/jquery.js"></script>
+
+<script type="text/javascript" src="../root/javascript/loader.js"></script>
+    
+<script>
+      $( function() {
+          loader.initialize();
+
+          $(window).on( 'load', function() {
+              loader.showLoader();
+
+              setInterval( function() {
+                  loader.hideLoader();
+              }, 3000 );
+        } );
+      } );
+   </script>
+
+</head>
+<body>
+    <div class="container">
+    <h1>Welcome to my Dead by Daylight Survey</h1>
+    <p>Who did you play as?</p>
+    <form action="../root/survivors.html">
+      <button class="b1" type="submit"><strong>Survivor</strong></button>
+      </form>
+    <form action="../root/killers.html">
+    <button class="b2" type="submit"><strong>Killer</strong></button>
+    </form>
+    </div>
+
+</body>
+</html>
